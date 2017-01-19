@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".NavigateActivity" >
+
+    <TextView
+        android:id="@+id/dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="@string/dest_string" 
+        android:textColor="@color/green"
+        android:textSize="30sp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dest"
+        android:layout_marginTop="46dp"
+        android:ems="8" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+  <Button
+      android:id="@+id/path_btn"
+      style="@drawable/button"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/auto_complete"
+      android:layout_marginTop="53dp"
+      android:background="@drawable/button"
+      android:contentDescription="@drawable/button"
+      android:text="@string/path"
+      android:textColor="@color/white" />
+ 
+</RelativeLayout>

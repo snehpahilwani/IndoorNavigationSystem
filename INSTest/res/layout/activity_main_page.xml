@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    tools:context=".FirstPage" >
+    
+      <TextView
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/options"
+        android:contentDescription="@string/options"
+        android:textColor="#14f04b"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/nav"
+        style="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wmi"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/button"
+        android:contentDescription="@drawable/button"
+        android:text="@string/nav"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/wmi"
+        style="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/vbtn"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/button"
+        android:contentDescription="@drawable/button"
+        android:text="@string/wmi"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/vbtn"
+        style="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/option"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/button"
+        android:contentDescription="@drawable/button"
+        android:text="@string/view_map"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
